@@ -1,5 +1,6 @@
 import type { SavedDraft } from "@/types"
 
+const WELCOME_KEY = "condraft-welcome-v1"
 const DISCLAIMER_KEY = "condraft-disclaimer-v1"
 const SAVE_GATE_KEY = "condraft-save-gate-v1"
 
@@ -45,6 +46,14 @@ export function openDraft(draft: SavedDraft) {
   if (draft.kind === "interview") return "/steps"
   if (draft.kind === "rent") return "/rent"
   return "/blank"
+}
+
+export function hasSeenWelcome(): boolean {
+  return typeof window !== "undefined" && sessionStorage.getItem(WELCOME_KEY) === "yes"
+}
+
+export function markWelcome() {
+  sessionStorage.setItem(WELCOME_KEY, "yes")
 }
 
 export function hasEntered(): boolean {

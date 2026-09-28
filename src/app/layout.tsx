@@ -1,4 +1,5 @@
 import { SiteNav } from "@/components/SiteNav"
+import { WelcomeGate } from "@/components/WelcomeGate"
 import type { Metadata } from "next"
 import { Libre_Baskerville, Source_Sans_3 } from "next/font/google"
 import "./globals.css"
@@ -13,6 +14,7 @@ const serif = Libre_Baskerville({
   variable: "--font-serif",
   subsets: ["latin"],
   weight: ["400", "700"],
+  style: ["normal", "italic"],
 })
 
 export const metadata: Metadata = {
@@ -24,12 +26,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable} h-full antialiased`}>
       <body className="min-h-full app-body">
-        <SiteNav />
-        {children}
-        <footer className="foot">
-          Reference drafts only, not legal advice. Citations link to India Code. Verify stamp duty and registration with
-          your State before signing.
-        </footer>
+        <WelcomeGate>
+          <SiteNav />
+          {children}
+          <footer className="foot">
+            Reference drafts only, not legal advice. Citations link to India Code. Verify stamp duty and registration with
+            your State before signing.
+          </footer>
+        </WelcomeGate>
       </body>
     </html>
   )

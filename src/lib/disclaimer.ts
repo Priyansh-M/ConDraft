@@ -6,7 +6,7 @@ The clauses and citations are drawn from a curated list of public central Acts (
 
 Do not sign, stamp, register, or rely on a generated document in a dispute, tenancy, employment, loan, or business deal unless a licensed advocate in your State has reviewed it for you.
 
-By continuing you agree that you use ConDraft at your own risk, and that Priyansh / ConDraft will not be liable for loss, penalty, unenforceable paper, or any filing made without independent legal advice.`
+By continuing you agree that you use ConDraft at your own risk, and that owner / ConDraft will not be liable for loss, penalty, unenforceable paper, or any filing made without independent legal advice.`
 
 export const SAVE_GATE_TITLE = "Sign in if you want to save this and come back"
 
