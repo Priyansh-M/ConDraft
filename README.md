@@ -9,9 +9,9 @@ It is a student-built legal-reference tool. It is not a law firm, advocate, or n
 ## What it does
 
 - **31 agreement types**, grouped as Home and premises, Work, Money, Business, and Creative and goods
-- **Question-by-question interview**, with a plain-English explanation of each field
+- **Question-by-question format for your agreement**, with a plain-English explanation of each field
 - **Deed-format output** you can review on screen and download as PDF
-- **India Code citations** attached as footnotes from a curated list of public central Acts
+- **Real Code citations for verification** attached as footnotes from a curated list of public central Acts
 - **Account-only drafts**: nothing is saved unless you are signed in; each account sees only its own drafts
 - **Blank builder** for people who want to write their own clauses and attach citations
 
